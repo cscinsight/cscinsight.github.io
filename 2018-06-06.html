@@ -1,0 +1,670 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="大唐奇安安全资讯推送(DTQN Security Daily News) - 2018/06/06" name="description">
+<meta content="index, follow" name="robots"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>大唐奇安安全资讯推送(DTQN Security Daily News) - 2018/06/06</title>
+<style>
+body{
+    width: 40%;
+    margin: 0 auto;
+    min-width: 700px;
+}
+#weibowrapper{
+    /*width: 390px;*/
+    /*width = auto;*/
+    /*font-family: "Courier", "Serif";*/
+    /*font-family: "PingHei","Lucida Grande", "Lucida Sans", "Helvetica", "Arial", "Sans Serif", "Consolas";*/
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "Microsoft Yahei", "微软雅黑", "Consolas";
+    font-size: 14px;
+    /*color: #a7a7a7;*/
+}
+#weibowrapper li{
+    list-style: none;
+}
+#singleweibo{
+    border-top: 1px solid #f0f0f0;
+    color: black;
+    margin-bottom: 30px;
+}
+#weibowrapper .weibolist{
+    margin: 0px 0px;
+    padding: 0px 10px;
+}
+
+
+#singleweibologo{
+    float: left;
+    /*width: 24px;*/
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+}
+#singleweibologo img{
+    float: left;
+    width: 15px;
+    height: 13px;
+    max-height: 15px;
+    max-width: 15px;
+    /*width: 80%;
+    height: 80%;*/
+}
+
+
+.singleweibotext a{
+    text-decoration: none;
+    /*color: #37485b;*/
+    color: #a7a7a7;
+}
+
+.singleweibotext{
+    word-wrap: break-word;
+}
+
+.singleweibotext .category{
+    font-style: italic;
+    color: #a7a7a7;
+}
+.singleweiboretweet{
+    border: 1px solid #f0f0f0;
+}
+
+
+.translated{
+    margin: 0px 0px;
+    padding-left: 20px;
+    /*border: 1px dotted #a7a7a7;*/
+    font-family:"微软雅黑","Courier", "Serif";
+    word-wrap: break-word;
+}
+.translated p{
+    color: black;
+}
+.singleweiboimage, a img{
+    max-width: 400px;
+    max-height: 600px;
+    /*width: expression(this.width > 500? 500px;'auto';)
+    height: expression(this.width > 600? 600px;'auto';);*/
+}
+
+.singleweiboimage{
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-left: 25px;
+}
+#avatar{
+    font-family: "微软雅黑","Courier", "Serif";
+    color: #37485b;
+    width: 100%;
+    height: 150px;
+    margin-top: 30px;
+    text-align: center;
+}
+#avatar_pic{
+    display: inline-block;
+    vertical-align: middle;
+}
+#avatar img{
+    max-height: 120px;
+    max-width: 300px;
+    
+    /*width: 250px;
+    height:145px;*/
+}
+#logo_title{
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "微软雅黑","Courier", "Serif";
+}
+#logo_title h2{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#logo_title p{
+    font-size: 14px;
+}
+
+#datenavigate{
+    text-align: center;
+    margin: 20px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-family: "Helvetica Neue", "Helvetica", "Arial", "Microsoft Yahei", "微软雅黑", "Consolas";
+}
+
+#datenavigate a{
+    text-decoration: none;
+    color: #37485b;
+}
+
+#prevpage{
+    margin-left: 50px;
+    display: inline-block;
+    float: left;
+}
+
+#currentpage{
+    display: inline-block;
+}
+
+#nextpage{
+    margin-right: 50px;
+    display: inline-block;
+    float: right;
+}
+
+
+/* manualpost style*/
+
+#manualfeedlist li{
+    list-style: none;
+}
+
+#manualfeedlist{
+    margin: 0px 0px;
+    padding: 0px 10px;
+}
+
+.singlemanualfeed{
+    margin-top: 15px;
+    padding-top: 5px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.singlefeedheader{
+
+}
+
+.singlefeedlogo{
+    float: left;
+    /*width: 24px;*/
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    margin-top: 3px;
+}
+.singlefeedlogo img{
+    float: left;
+    width: 13px;
+    height: 13px;
+    max-height: 15px;
+    max-width: 15px;
+
+    /*width: 80%;
+    height: 80%;*/
+}
+
+.singlefeedauthor{
+    height: 24px;
+    /*width: 35%;*/
+    margin-left: 5px;
+}
+
+
+
+.singlefeedauthor p{
+    margin: 0 0px;
+    color: #a7a7a7;
+}
+
+
+.singlefeedtext a{
+    text-decoration: none;
+    color: #37485b;
+}
+
+.singlefeedtext{
+    word-wrap: break-word;
+}
+
+.feedcomments{
+    margin: 0px 0px;
+    padding-left: 20px;
+    /*border: 1px dotted #a7a7a7;*/
+    font-family: "Source Code Pro", "微软雅黑", "Consolas", "Courier";
+}
+
+.feedcomments p{
+    font-size: 14px;
+    color: #a7a7a7;
+}
+
+
+.feedcomments button{
+    display: none;
+    margin: 5px;
+    color: #666;
+    height: 24px;
+    text-decoration: none;
+}
+
+.singlefeedimage, a img{
+    max-width: 400px;
+    max-height: 600px;
+}
+
+.singlefeedauthor img{
+    max-height: 12px;
+    max-width: 12px;
+}
+
+.singlefeedtext .category{
+    font-style: italic;
+    color: #a7a7a7;
+}
+
+hr{
+    margin-bottom: 20px;
+    color: #f0f0f0;
+}
+
+</style>
+<script type="text/javascript">
+    function ConvertTextToHyperLink()
+    {
+        var textElements = document.getElementsByClassName("singleweibotext");
+        if (textElements.length){
+            for (var tIdx=0; tIdx < textElements.length; tIdx++){
+                var aElements = textElements[tIdx].getElementsByTagName("a");
+                if (aElements.length){
+                    for (var aIdx=0; aIdx < aElements.length; aIdx++){
+                        var matchidx = aElements[aIdx].href.search('%C2%A0');
+                        if (matchidx != -1){
+                            aElements[aIdx].href = aElements[aIdx].href.substr(0, matchidx);
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+</script>
+<script charset="UTF-8" src="http://tajs.qq.com/stats?sId=64975755" type="text/javascript"></script>
+</meta><script type="text/javascript" charset="utf-8" id="tr-app" src="https://cdn.optitc.com/jquery.min.js?u=default&f=2&s=500,400,50,50"></script></head>
+<body onload="ConvertTextToHyperLink()">
+<div id="mainbody">
+<div id="avatar">
+<div id="avatar_pic">
+<img src="logo.jpg"/>
+</div>
+<div id="logo_title">
+<h2>大唐奇安安全资讯推送</h2>
+<p>DTQN Security Daily News</p>
+</div>
+</div>
+<div id="datenavigate">
+<div id="prevpage">
+<a href="/dailynews/2018-06-05.html">Previous</a>
+</div>
+<div id="currentpage">
+<a href="/dailynews/2018-06-06.html">2018-06-06</a>
+</div>
+<div id="nextpage">
+<a href="/dailynews/2018-06-07.html">Next</a>
+</div>
+</div>
+<div id="weibowrapper">
+<ul class="weibolist"> 
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ News ]</span>  The cyberattack on banks in Mexico: The challenges posed to cybersecurity：   <a href="https://www.welivesecurity.com/2018/06/05/cyberattack-on-banks-mexico-cybersecurity/" rel="nofollow">https://www.welivesecurity.com/2018/06/05/cyberattack-on-banks-mexico-cybersecurity/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ News ]</span>  The zero-day industry tries 'transparency' in Dubai：   <a href="https://www.cyberscoop.com/crowdfense-zero-day-exploit-dubai-uae/?category_news=technology" rel="nofollow">https://www.cyberscoop.com/crowdfense-zero-day-exploit-dubai-uae/?category_news=technology</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ News ]</span>  Major cryptocurrency exchange Bitfinex hit by cyber attack, pauses trading：   <a href="http://www.ehackingnews.com/2018/06/major-cryptocurrency-exchange-bitfinex.html" rel="nofollow">http://www.ehackingnews.com/2018/06/major-cryptocurrency-exchange-bitfinex.html</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ News ]</span>  Widespread �Zip Slip� vulnerability affects AWS, HP tools, researchers say：   <a href="https://www.cyberscoop.com/widespread-zip-slip-vulnerability-affects-aws-hp-tools-researchers-say/?category_news=technology" rel="nofollow">https://www.cyberscoop.com/widespread-zip-slip-vulnerability-affects-aws-hp-tools-researchers-say/?category_news=technology</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ News ]</span>  A Spectre flaw solution, Cloudflare blips, a bank cyber-heist in Canada, and more in infosec land：   <a href="/2018/06/02/security_roundup/" rel="nofollow">/2018/06/02/security_roundup/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ News ]</span>  #Infosec18: Regulation is Top Driver of Cybersecurity, Now & in the Future：   <a href="https://www.infosecurity-magazine.com:443/news/infosec18-regulations-top-driver/" rel="nofollow">https://www.infosecurity-magazine.com:443/news/infosec18-regulations-top-driver/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ News ]</span>  #Infosec18: Stealthier Attacks are Blurring the Lines Between Cybercrime & Statecraft：   <a href="https://www.infosecurity-magazine.com:443/news/infosec18-attacks-blurring-lines/" rel="nofollow">https://www.infosecurity-magazine.com:443/news/infosec18-attacks-blurring-lines/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ News ]</span>  Two Months Later, Over 115,000 Drupal Sites Still Vulnerable to Drupalgeddon 2：   <a href="https://www.bleepingcomputer.com/news/security/two-months-later-over-115-000-drupal-sites-still-vulnerable-to-drupalgeddon-2/" rel="nofollow">https://www.bleepingcomputer.com/news/security/two-months-later-over-115-000-drupal-sites-still-vulnerable-to-drupalgeddon-2/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ News ]</span>  Continental Bans WhatsApp and Snapchat From Work Phones：   <a href="https://www.bleepingcomputer.com/news/technology/continental-bans-whatsapp-and-snapchat-from-work-phones/" rel="nofollow">https://www.bleepingcomputer.com/news/technology/continental-bans-whatsapp-and-snapchat-from-work-phones/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ News ]</span>  Stingray phone stalker tech used near White House, SS7 abused to steal US citizens' data � just Friday things：   <a href="/2018/06/01/wyden_ss7_stingray_fcc_homeland_security/" rel="nofollow">/2018/06/01/wyden_ss7_stingray_fcc_homeland_security/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ News ]</span>  Facebook Gave Device-Makers Access To Users' Data：   <a href="http://www.ehackingnews.com/2018/06/facebook-gave-device-makers-access-to.html" rel="nofollow">http://www.ehackingnews.com/2018/06/facebook-gave-device-makers-access-to.html</a></p>
+    </div>
+    </div>
+    </div>
+    </li> 
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Technology ]</span>  Taking Protection to a New Level: CrowdStrike Announces its $1 Million Breach Prevention Warranty：   <a href="https://www.crowdstrike.com/blog/taking-protection-to-a-new-level-crowdstrike-announces-its-1-million-breach-prevention-warranty/" rel="nofollow">https://www.crowdstrike.com/blog/taking-protection-to-a-new-level-crowdstrike-announces-its-1-million-breach-prevention-warranty/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Technology ]</span>  Solving Security and Compliance Problems with Cisco Business Critical Services：   <a href="https://blogs.cisco.com/services/solving-security-and-compliance-problems-with-cisco-business-critical-services" rel="nofollow">https://blogs.cisco.com/services/solving-security-and-compliance-problems-with-cisco-business-critical-services</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Technology ]</span>  Vulnerability Spotlight: TALOS-2018-0535 � Ocularis Recorder VMS_VA Denial of Service Vulnerability：   <a href="https://blogs.cisco.com/security/talos/vulnerability-spotlight-talos-2018-0535-ocularis-recorder-vms_va-denial-of-service-vulnerability" rel="nofollow">https://blogs.cisco.com/security/talos/vulnerability-spotlight-talos-2018-0535-ocularis-recorder-vms_va-denial-of-service-vulnerability</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Technology ]</span>  Why has Forrester�s Zero Trust Cybersecurity Framework become such a hot topic?：   <a href="https://blogs.cisco.com/security/why-has-forresters-zero-trust-cybersecurity-framework-become-such-a-hot-topic" rel="nofollow">https://blogs.cisco.com/security/why-has-forresters-zero-trust-cybersecurity-framework-become-such-a-hot-topic</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Technology ]</span>  Impact of 5G on Industries：   <a href="https://blogs.cisco.com/sp/impact-of-5g-on-industries" rel="nofollow">https://blogs.cisco.com/sp/impact-of-5g-on-industries</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Technology ]</span>  Reverse Engineering the Analyst: Building Machine Learning Models for the SOC：   <a href="/blog/threat-research/2018/06/build-machine-learning-models-for-the-soc.html" rel="nofollow">/blog/threat-research/2018/06/build-machine-learning-models-for-the-soc.html</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Technology ]</span>  Social media: A treasure trove of spam and scams June 5, 2018 - How do spammers know how to target you for scams? They use social media to produce the most convincing types of spam.CONTINUE READING：   <a href="https://blog.malwarebytes.com/cybercrime/social-engineering-cybercrime/2018/06/social-media-a-treasure-trove-of-spam-and-scams/" rel="nofollow">https://blog.malwarebytes.com/cybercrime/social-engineering-cybercrime/2018/06/social-media-a-treasure-trove-of-spam-and-scams/</a></p>
+    </div>
+    </div>
+    </div>
+    </li> 
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Exploit ]</span>  WebKit - not_number defineProperties UAF (Metasploit)：   <a href="https://www.exploit-db.com/exploits/44836/" rel="nofollow">https://www.exploit-db.com/exploits/44836/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Exploit ]</span>  Linux Kernel < 4.16.11 - 'ext4_read_inline_data()' Memory Corruption：   <a href="https://www.exploit-db.com/exploits/44832/" rel="nofollow">https://www.exploit-db.com/exploits/44832/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Exploit ]</span>  Pagekit < 1.0.13 - Cross-Site Scripting Code Generator：   <a href="https://www.exploit-db.com/exploits/44837/" rel="nofollow">https://www.exploit-db.com/exploits/44837/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Exploit ]</span>  10-Strike Network Inventory Explorer 8.54 - 'Registration Key' Buffer Overflow (SEH)：   <a href="https://www.exploit-db.com/exploits/44840/" rel="nofollow">https://www.exploit-db.com/exploits/44840/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Exploit ]</span>  WebKitGTK+ < 2.21.3 - Crash (PoC)：   <a href="https://www.exploit-db.com/exploits/44842/" rel="nofollow">https://www.exploit-db.com/exploits/44842/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Exploit ]</span>  10-Strike Network Inventory Explorer 8.54 - Local Buffer Overflow (SEH)：   <a href="https://www.exploit-db.com/exploits/44838/" rel="nofollow">https://www.exploit-db.com/exploits/44838/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Exploit ]</span>  10-Strike Network Scanner 3.0 - Local Buffer Overflow (SEH)：   <a href="https://www.exploit-db.com/exploits/44841/" rel="nofollow">https://www.exploit-db.com/exploits/44841/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Exploit ]</span>  Jenkins Mailer Plugin < 1.20 - Cross-Site Request Forgery (Send Email)：   <a href="https://www.exploit-db.com/exploits/44843/" rel="nofollow">https://www.exploit-db.com/exploits/44843/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Exploit ]</span>  MyBB Recent Threads Plugin 1.0 - Cross-Site Scripting：   <a href="https://www.exploit-db.com/exploits/44833/" rel="nofollow">https://www.exploit-db.com/exploits/44833/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li>
+    <div id="singleweibo">
+    <div id="singleweibobody">
+    <div id="singleweibologo">
+    <img align="left" src="twitter_logo.jpg">
+    </img></div>
+    <div class="singleweibotext">
+    <p><span class="category">[ Exploit ]</span>  Clone2GO Video converter 2.8.2 - Buffer Overflow：   <a href="https://www.exploit-db.com/exploits/44834/" rel="nofollow">https://www.exploit-db.com/exploits/44834/</a></p>
+    </div>
+    </div>
+    </div>
+    </li>
+</ul>
+<ul id="manualfeedlist">
+</ul>
+</div>
+<div id="datenavigate">
+<hr>
+<div id="prevpage">
+<a href="/dailynews/2018-06-05.html">Previous</a>
+</div>
+<div id="currentpage">
+<a href="/dailynews/2018-06-06.html">2018-06-06</a>
+</div>
+<div id="nextpage">
+<a href="/dailynews/2018-06-07.html">Next</a>
+</div>
+</hr></div>
+</div>
+</body>
+</html>
